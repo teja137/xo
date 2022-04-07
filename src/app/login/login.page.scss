@@ -1,0 +1,131 @@
+.xox {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.xox:before {
+    opacity: 0;
+    animation-name: o;
+    animation-timing-function:ease;
+    animation-duration: 30s;
+	// animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://64.media.tumblr.com/e1b55c045c2a51b8fba232c64ccb83a0/tumblr_p1clkz3X4j1sfxb96o1_r1_500.gifv);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+}
+.contact-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 400px;
+	padding: 80px 10px;
+	background: rgba(0, 0, 0, 0.5);
+}
+.avatar {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: calc(-80px/2);
+	left: 150px;
+    margin-top: 65px;
+}
+.contact-form h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.contact-form p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.contact-form input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-form input[type=email], .contact-form input[type=password] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.contact-form input[type=submit] {
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	background: red;
+	cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	margin-top: 3%;
+}
+.contact-form a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+input[type=checkbox] {
+	width: 20%;
+    position: relative;
+    top: -1px;
+    right: 70px;
+}
+.o{
+    position: relative;
+    left: 140px;
+    top: 15px;
+}
+
+
+
+@keyframes o {
+    0% {
+      transform: translateZ(0px);
+      opacity: 0;
+      // -webkit-clip-path: polygon(100% 100%, 100% 100%, 0 100%, 0 80%);
+      // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  10% {
+      transform: translateY(0);
+      opacity: 1;
+      // -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+       transform: translateY(0);
+       opacity: 1;
+      // -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+      // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+       transform: translateY(0px);
+       opacity: 0;
+      // -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+      // clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+    
+  }
+  }
+  
